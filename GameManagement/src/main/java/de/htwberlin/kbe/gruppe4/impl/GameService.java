@@ -1,31 +1,29 @@
 package de.htwberlin.kbe.gruppe4.impl;
 
 import com.google.inject.Guice;
-import com.google.inject.Inject;
+import javax.inject.Inject;
 import com.google.inject.Injector;
 import de.htwberlin.kbe.gruppe4.inter.GameModule;
 import de.htwberlin.kbe.gruppe4.inter.*;
 
 import java.util.ArrayList;
 import java.util.List;
-public class GameServiceImpl {
+public class GameService {
     private final CLIServiceImpl cli;
-    @Inject
     DeckService deckService;
 
-    @Inject
     RulesService rulesService;
 
-    @Inject
     PlayerService playerService;
+
     private final List<Player> players;
     private final Deck deck;
     private final List<Card> table;
     private final Rules rules;
     private int currentPlayer;
     private boolean reversed;
-
-    public GameServiceImpl(List<String> names, CLIServiceImpl cli) {
+@Inject
+    public GameService(List<String> names, CLIServiceImpl cli, DeckService deckService, RulesService rulesService, PlayerService playerService) {
         this.cli = cli;
         this.players = new ArrayList<>();
         for (String name : names) {
@@ -36,6 +34,9 @@ public class GameServiceImpl {
         this.rules = new Rules();
         this.currentPlayer = 0;
         this.reversed = false;
+        this.deckService = deckService;
+        this.rulesService = rulesService;
+        this.playerService = playerService;
     }
 
     public void play() {
@@ -106,8 +107,12 @@ public class GameServiceImpl {
 
     public static void main(String[] args) {
         CLIServiceImpl cli = new CLIServiceImpl();
+        DeckService deckService = new DeckServiceImpl();
+        RulesService rulesService = new RulesServiceImpl();
+        PlayerService playerService = new PlayerServiceImpl();
+        playerService.setDeckService(deckService);
         List<String> names = cli.getPlayerNames();
-        GameServiceImpl game = new GameServiceImpl(names, cli);
+        GameService game = new GameService(names, cli, deckService, rulesService, playerService);
         game.play();
     }
 }

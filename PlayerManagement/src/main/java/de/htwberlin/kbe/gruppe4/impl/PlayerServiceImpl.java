@@ -2,9 +2,22 @@ package de.htwberlin.kbe.gruppe4.impl;
 
 import com.google.inject.Inject;
 import de.htwberlin.kbe.gruppe4.inter.*;
-
+import javax.inject.Singleton;
+@Singleton
 public class PlayerServiceImpl implements PlayerService {
-    DeckServiceImpl deckService;
+    DeckService deckService;
+
+    @Override
+    public DeckService getDeckService() {
+        return this.deckService;
+    }
+
+    @Override
+    public void setDeckService(DeckService deckService) {
+        this.deckService = deckService;
+    }
+
+
 
     @Override
     public void dealHand(Player player, Deck deck) {
