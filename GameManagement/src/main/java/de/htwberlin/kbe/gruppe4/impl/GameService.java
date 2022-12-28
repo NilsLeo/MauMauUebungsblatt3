@@ -43,7 +43,6 @@ public class GameService {
     public void play() {
         cli.displayRules();
         rules.setDrawTwoOnSeven(cli.getRule("draw two on seven"));
-        rules.isDrawTwoOnSeven();
         rules.setChooseSuitOnJack(cli.getRule("choose suit on jack"));
         rules.setReverseOnAce(cli.getRule("reverse on ace"));
         deckService.shuffle(deck);
