@@ -8,6 +8,7 @@ import de.htwberlin.kbe.gruppe4.inter.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class GameService {
     private final CLIServiceImpl cli;
     DeckService deckService;
@@ -22,8 +23,10 @@ public class GameService {
     private final Rules rules;
     private int currentPlayer;
     private boolean reversed;
-@Inject
-    public GameService(List<String> names, CLIServiceImpl cli, DeckService deckService, RulesService rulesService, PlayerService playerService) {
+
+    @Inject
+    public GameService(List<String> names, CLIServiceImpl cli, DeckService deckService, RulesService rulesService,
+            PlayerService playerService) {
         this.cli = cli;
         this.players = new ArrayList<>();
         for (String name : names) {
@@ -42,8 +45,10 @@ public class GameService {
     public void play() {
         cli.displayRules();
         rules.setDrawTwoOnSeven(cli.getRule("draw two on seven"));
+        rules.isDrawTwoOnSeven();
         rules.setChooseSuitOnJack(cli.getRule("choose suit on jack"));
         rules.setReverseOnAce(cli.getRule("reverse on ace"));
+        deckService.shuffle(deck);
         for (Player player : players) {
             playerService.dealHand(player, deck);
         }
@@ -73,9 +78,16 @@ public class GameService {
                     played = playerService.play(player, index, leadSuit, leadRank);
                     if (played != null && rulesService.isCardValid(played, leadSuit, leadRank, rules)) {
                         if (rules.isDrawTwoOnSeven() && played.getRank() == Card.Rank.SEVEN) {
+                            Player nextPlayer = players.get((currentPlayer + 1) % players.size()); // get next player in
+                                                                                                   // the list
+                            Card drawn1 = deckService.deal(deck); // draw first card
+                            Card drawn2 = deckService.deal(deck); // draw second card
+                            playerService.draw(nextPlayer, drawn1); // add first card to next player's hand
+                            playerService.draw(nextPlayer, drawn2); // add second card to next player's hand
+                            leadSuit = played.getSuit(); // update lead suit
+                            leadRank = played.getRank(); // update lead rank
                             cli.announcePlay(player.getName(), played);
-                            playerService.draw(player, deckService.deal(deck));
-                            playerService.draw(player, deckService.deal(deck));
+                            cli.announceDrawTwoCards();
                         } else {
                             cli.announcePlay(player.getName(), played);
                             leadSuit = played.getSuit();

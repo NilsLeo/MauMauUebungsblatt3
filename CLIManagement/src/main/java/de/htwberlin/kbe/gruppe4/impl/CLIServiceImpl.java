@@ -76,4 +76,9 @@ public class CLIServiceImpl implements CLIService {
         }
         return names;
     }
+    @Override
+    public void announceDrawTwoCards() {
+        System.out.println("The next player must draw 2 Cards.");
+        
+    }
 }

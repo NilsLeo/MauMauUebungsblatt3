@@ -20,4 +20,5 @@ public interface CLIService {
     void announceWinner(String name);
 
     List<String> getPlayerNames();
+    void announceDrawTwoCards();
 }
