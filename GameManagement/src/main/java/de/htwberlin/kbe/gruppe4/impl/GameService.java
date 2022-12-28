@@ -88,10 +88,29 @@ public class GameService {
                             leadRank = played.getRank(); // update lead rank
                             cli.announcePlay(player.getName(), played);
                             cli.announceDrawTwoCards();
+                        }
+                        if (rules.isChooseSuitOnJack() && played.getRank() == Card.Rank.JACK) { // check if "choose suit
+                                                                                                // on
+                            // jack" rule is enabled and
+                            // played card is a jack
+                            cli.displaySuits(); // display list of possible suits
+                            String chosenSuit = cli.getSuitChoice(); // prompt player to choose a suit
+                            rules.setChosenSuitTemporarilyEnabled(true);
+                            rules.setSuit(Card.Suit.valueOf(chosenSuit.toUpperCase()));
+                            leadSuit = played.getSuit(); // update lead suit
+                            leadRank = played.getRank(); // update lead rank
+                            cli.announcePlay(player.getName(), played);
+                            cli.announceChosenSuit(Card.Suit.valueOf(chosenSuit.toUpperCase()));
+
+                        }
+                        if (rules.isReverseOnAce() && played.getRank() == Card.Rank.ACE) {
+
                         } else {
                             cli.announcePlay(player.getName(), played);
                             leadSuit = played.getSuit();
                             leadRank = played.getRank();
+                            rules.setChosenSuitTemporarilyEnabled(false);
+
                         }
                     }
                 }
@@ -114,7 +133,26 @@ public class GameService {
                     currentPlayer = 0;
                 }
             }
+
+            // shuffle deck, when there are 2 cards or less left
+            if (deck.getCards().size() <= 2) {
+                List<Card> newDeck = new ArrayList<>();
+                for (Card card : table) {
+                    if (!card.equals(lead)) {
+                        newDeck.add(card);
+                        table.remove(card);
+                    }
+                }
+                for (Card card : deck.getCards()) {
+                        newDeck.add(card);
+                }
+
+                deck.setCards(newDeck);
+                deckService.shuffle(deck);
+            }
+        
         }
+
     }
 
     public static void main(String[] args) {

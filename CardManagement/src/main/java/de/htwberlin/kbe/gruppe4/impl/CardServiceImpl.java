@@ -4,7 +4,6 @@ import de.htwberlin.kbe.gruppe4.inter.Card;
 import de.htwberlin.kbe.gruppe4.inter.CardService;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import javax.inject.Singleton;

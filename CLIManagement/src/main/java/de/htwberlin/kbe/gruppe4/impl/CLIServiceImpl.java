@@ -42,7 +42,7 @@ public class CLIServiceImpl implements CLIService {
 
     @Override
     public void displayLead(Card.Suit suit, Card.Rank rank) {
-        System.out.println("Top card on the table: " + suit + " " + rank);
+        System.out.println("Top card on the table: " + rank + " of " + suit);
     }
 
     @Override
@@ -81,4 +81,36 @@ public class CLIServiceImpl implements CLIService {
         System.out.println("The next player must draw 2 Cards.");
         
     }
+    @Override
+public void displaySuits() {
+    System.out.println("Choose a suit:");
+    System.out.println("1. Clubs");
+    System.out.println("2. Spades");
+    System.out.println("3. Hearts");
+    System.out.println("4. Diamonds");
+}
+
+@Override
+public String getSuitChoice() {
+    System.out.print("Enter the number of the suit you want to choose: ");
+    int input = Integer.parseInt(scanner.nextLine());
+    switch (input) {
+        case 1:
+            return "CLUBS";
+        case 2:
+            return "SPADES";
+        case 3:
+            return "HEARTS";
+        case 4:
+            return "DIAMONDS";
+        default:
+            System.out.println("Invalid input. Try again.");
+            return getSuitChoice();
+    }
+}
+@Override
+public void announceChosenSuit(Card.Suit suit){
+    System.out.println("The next player's card must have the suit " + suit);
+    
+}
 }

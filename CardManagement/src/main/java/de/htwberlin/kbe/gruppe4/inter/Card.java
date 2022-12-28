@@ -27,6 +27,6 @@ public class Card {
     }
 
     public enum Rank {
-        ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING
+        SEVEN, EIGHT, NINE, TEN, QUEEN, JACK, KING, ACE
     }
 }

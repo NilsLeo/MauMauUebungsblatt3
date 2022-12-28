@@ -21,4 +21,7 @@ public interface CLIService {
 
     List<String> getPlayerNames();
     void announceDrawTwoCards();
+    void displaySuits();
+    String getSuitChoice();
+    void announceChosenSuit(Card.Suit suit);
 }

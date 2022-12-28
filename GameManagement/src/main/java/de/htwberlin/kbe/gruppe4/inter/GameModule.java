@@ -1,8 +1,6 @@
 package de.htwberlin.kbe.gruppe4.inter;
 import com.google.inject.AbstractModule;
 import de.htwberlin.kbe.gruppe4.impl.*;
-import de.htwberlin.kbe.gruppe4.inter.CLIService;
-import de.htwberlin.kbe.gruppe4.inter.CardService;
 
 public class GameModule extends AbstractModule {
     @Override
