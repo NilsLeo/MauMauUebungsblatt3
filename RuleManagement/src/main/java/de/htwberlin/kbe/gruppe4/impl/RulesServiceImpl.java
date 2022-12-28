@@ -13,13 +13,10 @@ public class RulesServiceImpl implements RulesService {
         Card.Rank rank = card.getRank();
         boolean valid = false;
         if (suit == leadSuit || rank == leadRank && !rules.isChosenSuitTemporarilyEnabled()) {
-            System.out.println("if 1");
             valid = true;
         }
 
         if (rules.isChooseSuitOnJack() && rules.isChosenSuitTemporarilyEnabled() && rules.getSuit() == suit) {
-            System.out.println("if 2");
-
             valid = true;
         }
 
