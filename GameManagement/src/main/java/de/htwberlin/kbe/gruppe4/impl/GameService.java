@@ -106,10 +106,12 @@ public class GameService {
     }
 
     public static void main(String[] args) {
-        CLIServiceImpl cli = new CLIServiceImpl();
-        DeckService deckService = new DeckServiceImpl();
-        RulesService rulesService = new RulesServiceImpl();
-        PlayerService playerService = new PlayerServiceImpl();
+        Injector injector = Guice.createInjector(new GameModule());
+
+        CLIServiceImpl cli = injector.getInstance(CLIServiceImpl.class);
+        DeckServiceImpl deckService = injector.getInstance(DeckServiceImpl.class);
+        RulesServiceImpl rulesService = injector.getInstance(RulesServiceImpl.class);
+        PlayerServiceImpl playerService = injector.getInstance(PlayerServiceImpl.class);
         playerService.setDeckService(deckService);
         List<String> names = cli.getPlayerNames();
         GameService game = new GameService(names, cli, deckService, rulesService, playerService);
