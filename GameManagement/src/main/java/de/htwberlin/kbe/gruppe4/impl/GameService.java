@@ -22,7 +22,6 @@ public class GameService {
     private final List<Card> table;
     private final Rules rules;
     private int currentPlayer;
-    private boolean reversed;
 
     @Inject
     public GameService(List<String> names, CLIServiceImpl cli, DeckService deckService, RulesService rulesService,
@@ -36,7 +35,6 @@ public class GameService {
         this.table = new ArrayList<>();
         this.rules = new Rules();
         this.currentPlayer = 0;
-        this.reversed = false;
         this.deckService = deckService;
         this.rulesService = rulesService;
         this.playerService = playerService;
@@ -58,6 +56,7 @@ public class GameService {
         Card.Rank leadRank = lead.getRank();
         while (true) {
             Player player = players.get(currentPlayer);
+            int noOfTurns = 1;
             cli.displayHand(player.getName(), player.getHand());
             cli.displayLead(leadSuit, leadRank);
             Card played = null;
@@ -103,8 +102,12 @@ public class GameService {
                             cli.announceChosenSuit(Card.Suit.valueOf(chosenSuit.toUpperCase()));
 
                         }
-                        if (rules.isReverseOnAce() && played.getRank() == Card.Rank.ACE) {
 
+                        if (played.getRank() == Card.Rank.ACE) {
+                            leadSuit = played.getSuit(); // update lead suit
+                            leadRank = played.getRank(); // update lead rank
+                            noOfTurns++;
+                            cli.announcePlayAgainOnAce(player.getName(), played);
                         } else {
                             cli.announcePlay(player.getName(), played);
                             leadSuit = played.getSuit();
@@ -119,19 +122,12 @@ public class GameService {
                 cli.announceWinner(player.getName());
                 break;
             }
-            if (rules.isReverseOnAce() && played.getRank() == Card.Rank.ACE) {
-                reversed = !reversed;
-            }
-            if (reversed) {
-                currentPlayer--;
-                if (currentPlayer < 0) {
-                    currentPlayer = players.size() - 1;
-                }
-            } else {
-                currentPlayer++;
-                if (currentPlayer >= players.size()) {
-                    currentPlayer = 0;
-                }
+            noOfTurns--;
+            if(noOfTurns==0){ currentPlayer++;}
+           
+
+            if (currentPlayer >= players.size()) {
+                currentPlayer = 0;
             }
 
             // shuffle deck, when there are 2 cards or less left
@@ -144,13 +140,13 @@ public class GameService {
                     }
                 }
                 for (Card card : deck.getCards()) {
-                        newDeck.add(card);
+                    newDeck.add(card);
                 }
 
                 deck.setCards(newDeck);
                 deckService.shuffle(deck);
             }
-        
+
         }
 
     }

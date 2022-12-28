@@ -16,6 +16,7 @@ public interface CLIService {
     void announceInvalid();
 
     void announcePlay(String name, Card card);
+    void announcePlayAgainOnAce(String name, Card card);
 
     void announceWinner(String name);
 

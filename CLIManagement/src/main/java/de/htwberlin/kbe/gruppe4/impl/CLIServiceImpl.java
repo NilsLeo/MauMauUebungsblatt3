@@ -21,7 +21,7 @@ public class CLIServiceImpl implements CLIService {
         System.out.println("Here are the rules you can choose from:");
         System.out.println("1. Draw two on seven: Whenever a player plays a seven, the next player has to draw two cards and forfeit their turn.");
         System.out.println("2. Choose suit on jack: Whenever a player plays a jack, they get to choose the suit that the next player has to follow.");
-        System.out.println("3. Reverse on ace: Whenever a player plays an ace, the order of play is reversed.");
+        System.out.println("3. Play again on ace: Whenever a player plays an ace, they get to play again.");
         System.out.println("Enter 'y' to enable a rule or 'n' to disable it:");
     }
 
@@ -59,6 +59,11 @@ public class CLIServiceImpl implements CLIService {
     @Override
     public void announcePlay(String name, Card card) {
         System.out.println(name + " played " + card);
+    }
+
+    @Override
+    public void announcePlayAgainOnAce(String name, Card card) {
+        System.out.println(name + " played " + card + ". They get to play again.");
     }
 
     @Override
