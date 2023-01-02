@@ -6,10 +6,16 @@ import com.google.inject.Injector;
 import de.htwberlin.kbe.gruppe4.inter.GameModule;
 import de.htwberlin.kbe.gruppe4.inter.*;
 
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PatternLayout;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class GameService {
+    private static final Logger logger = Logger.getLogger(GameService.class);
     private final CLIServiceImpl cli;
     DeckService deckService;
 
@@ -45,6 +51,16 @@ public class GameService {
         rules.setDrawTwoOnSeven(cli.getRule("draw two on seven"));
         rules.setChooseSuitOnJack(cli.getRule("choose suit on jack"));
         rules.setReverseOnAce(cli.getRule("reverse on ace"));
+        
+        // ConsoleAppender consoleAppender = new ConsoleAppender();
+        // consoleAppender.setThreshold(Level.ALL);
+        // consoleAppender.setLayout(new PatternLayout("%d [%p|%c|%C{1}] %m%n"));
+        // consoleAppender.activateOptions();
+        // Logger.getRootLogger().addAppender(consoleAppender);
+        logger.info("Rules for the game have been set: draw two on seven = " + rules.isDrawTwoOnSeven() + 
+        ", choose suit on jack = " + rules.isChooseSuitOnJack() + 
+        ", reverse on ace = " + rules.isReverseOnAce());
+
         deckService.shuffle(deck);
         for (Player player : players) {
             playerService.dealHand(player, deck);
