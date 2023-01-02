@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import javax.inject.Singleton;
+
 @Singleton
 public class CLIServiceImpl implements CLIService {
     private final Scanner scanner;
@@ -19,8 +20,10 @@ public class CLIServiceImpl implements CLIService {
     public void displayRules() {
         System.out.println("Welcome to MauMau!");
         System.out.println("Here are the rules you can choose from:");
-        System.out.println("1. Draw two on seven: Whenever a player plays a seven, the next player has to draw two cards and forfeit their turn.");
-        System.out.println("2. Choose suit on jack: Whenever a player plays a jack, they get to choose the suit that the next player has to follow.");
+        System.out.println(
+                "1. Draw two on seven: Whenever a player plays a seven, the next player has to draw two cards and forfeit their turn.");
+        System.out.println(
+                "2. Choose suit on jack: Whenever a player plays a jack, they get to choose the suit that the next player has to follow.");
         System.out.println("3. Play again on ace: Whenever a player plays an ace, they get to play again.");
         System.out.println("Enter 'y' to enable a rule or 'n' to disable it:");
     }
@@ -70,6 +73,7 @@ public class CLIServiceImpl implements CLIService {
     public void announceWinner(String name) {
         System.out.println(name + " won the game!");
     }
+
     @Override
     public List<String> getPlayerNames() {
         System.out.print("Enter the number of players (2-5): ");
@@ -81,41 +85,44 @@ public class CLIServiceImpl implements CLIService {
         }
         return names;
     }
+
     @Override
     public void announceDrawTwoCards() {
         System.out.println("The next player must draw 2 Cards.");
-        
-    }
-    @Override
-public void displaySuits() {
-    System.out.println("Choose a suit:");
-    System.out.println("1. Clubs");
-    System.out.println("2. Spades");
-    System.out.println("3. Hearts");
-    System.out.println("4. Diamonds");
-}
 
-@Override
-public String getSuitChoice() {
-    System.out.print("Enter the number of the suit you want to choose: ");
-    int input = Integer.parseInt(scanner.nextLine());
-    switch (input) {
-        case 1:
-            return "CLUBS";
-        case 2:
-            return "SPADES";
-        case 3:
-            return "HEARTS";
-        case 4:
-            return "DIAMONDS";
-        default:
-            System.out.println("Invalid input. Try again.");
-            return getSuitChoice();
     }
-}
-@Override
-public void announceChosenSuit(Card.Suit suit){
-    System.out.println("The next player's card must have the suit " + suit);
-    
-}
+
+    @Override
+    public void displaySuits() {
+        System.out.println("Choose a suit:");
+        System.out.println("1. Clubs");
+        System.out.println("2. Spades");
+        System.out.println("3. Hearts");
+        System.out.println("4. Diamonds");
+    }
+
+    @Override
+    public String getSuitChoice() {
+        System.out.print("Enter the number of the suit you want to choose: ");
+        int input = Integer.parseInt(scanner.nextLine());
+        switch (input) {
+            case 1:
+                return "CLUBS";
+            case 2:
+                return "SPADES";
+            case 3:
+                return "HEARTS";
+            case 4:
+                return "DIAMONDS";
+            default:
+                System.out.println("Invalid input. Try again.");
+                return getSuitChoice();
+        }
+    }
+
+    @Override
+    public void announceChosenSuit(Card.Suit suit) {
+        System.out.println("The next player's card must have the suit " + suit);
+
+    }
 }

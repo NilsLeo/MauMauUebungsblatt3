@@ -87,10 +87,7 @@ public class GameService {
                             cli.announcePlay(player.getName(), played);
                             cli.announceDrawTwoCards();
                         }
-                        if (rules.isChooseSuitOnJack() && played.getRank() == Card.Rank.JACK) { // check if "choose suit
-                                                                                                // on
-                            // jack" rule is enabled and
-                            // played card is a jack
+                        if (rules.isChooseSuitOnJack() && played.getRank() == Card.Rank.JACK) { // check if "choose suit on jack" rule is enabled and played card is a jack
                             cli.displaySuits(); // display list of possible suits
                             String chosenSuit = cli.getSuitChoice(); // prompt player to choose a suit
                             rules.setChosenSuitTemporarilyEnabled(true);
@@ -111,8 +108,6 @@ public class GameService {
                             cli.announcePlay(player.getName(), played);
                             leadSuit = played.getSuit();
                             leadRank = played.getRank();
-                            rules.setChosenSuitTemporarilyEnabled(false);
-
                         }
                     }
                 }
