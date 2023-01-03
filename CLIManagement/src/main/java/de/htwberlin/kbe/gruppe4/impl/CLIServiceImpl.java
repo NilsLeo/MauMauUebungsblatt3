@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 import javax.inject.Singleton;
 
-@Singleton
+
 public class CLIServiceImpl implements CLIService {
     private final Scanner scanner;
 

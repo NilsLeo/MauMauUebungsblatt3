@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import javax.inject.Singleton;
-@Singleton
+
 public class DeckServiceImpl implements DeckService {
 
     

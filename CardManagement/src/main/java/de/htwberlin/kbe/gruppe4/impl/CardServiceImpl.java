@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Singleton;
-@Singleton
+
 public class CardServiceImpl implements CardService {
     @Override
     public List<Card> createDeck() {
