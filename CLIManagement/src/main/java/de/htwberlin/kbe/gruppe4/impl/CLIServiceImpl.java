@@ -39,13 +39,13 @@ public class CLIServiceImpl implements CLIService {
     public void displayHand(String name, List<Card> hand) {
         System.out.println(name + "'s hand:");
         for (int i = 0; i < hand.size(); i++) {
-            System.out.println(i + ": " + hand.get(i));
+            System.out.println(i+1 + ": " + hand.get(i));
         }
     }
 
     @Override
     public void displayPlayOrDraw() {
-        System.out.println("Enter 'p' to play a card or 'd' to draw a card:");
+        System.out.println("Enter a number to play a card, 'd' to draw a card or '#m' to place a number and say Mau:");
     }
 
     @Override
@@ -127,18 +127,18 @@ public class CLIServiceImpl implements CLIService {
     
 
     @Override
-    public String getSuitChoice() {
+    public Card.Suit getSuitChoice() {
         System.out.print("Enter the number of the suit you want to choose: ");
         int input = Integer.parseInt(scanner.nextLine());
         switch (input) {
             case 1:
-                return "CLUBS";
+                return Card.Suit.CLUBS;
             case 2:
-                return "SPADES";
+                return Card.Suit.SPADES;
             case 3:
-                return "HEARTS";
+                return Card.Suit.HEARTS;
             case 4:
-                return "DIAMONDS";
+                return Card.Suit.DIAMONDS;
             default:
                 System.out.println("Invalid input. Try again.");
                 return getSuitChoice();
@@ -148,6 +148,21 @@ public class CLIServiceImpl implements CLIService {
     @Override
     public void announceChosenSuit(Card.Suit suit) {
         System.out.println("The next player's card must have the suit " + suit);
+
+    }
+    @Override
+    public void announceInvalidMauMauCall() {
+        System.out.println("MauMauCall was invalid.");
+    }
+    @Override
+    public void announceMauMau() {
+        System.out.println("MauMau!");
+
+    }
+
+    public void announceForgotToSayMauMau(){
+        System.out.println("You forgot to say MauMau when playing your Last Card. You must now draws2 Cards a s a penalty");
+
 
     }
 }

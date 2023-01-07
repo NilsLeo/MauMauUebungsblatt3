@@ -21,12 +21,23 @@ public class DeckServiceImpl implements DeckService {
     }
 
     @Override
-    public List<Card> dealHand(Deck deck) {
-        List<Card> hand = new ArrayList<>();
+    public ArrayList<Card> dealHand(Deck deck) {
+        ArrayList<Card> hand = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             hand.add(deal(deck));
         }
         return hand;
+    }
+    @Override
+    public List<Card> renewDeckFromTable(Deck deck, List<Card> table) {
+        List<Card> cards = deck.getCards();
+            cards.add(table.get(0));
+            table.remove(cards.get(0));
+        deck.setCards(cards);
+        shuffle(deck);
+        return table;
+
+
     }
 
     @Override

@@ -1,7 +1,5 @@
 package de.htwberlin.kbe.gruppe4.inter;
 
-import de.htwberlin.kbe.gruppe4.impl.DeckServiceImpl;
-
 public interface PlayerService {
     void dealHand(Player player, Deck deck);
 

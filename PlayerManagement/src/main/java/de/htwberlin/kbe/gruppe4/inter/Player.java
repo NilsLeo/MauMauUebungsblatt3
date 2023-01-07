@@ -1,12 +1,11 @@
 package de.htwberlin.kbe.gruppe4.inter;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class Player {
     private String name;
-    private List<Card> hand;
+    private ArrayList<Card> hand;
 
     public Player(String name) {
         this.name = name;
@@ -17,11 +16,17 @@ public class Player {
         return name;
     }
 
-    public List<Card> getHand() {
+    public ArrayList<Card> getHand() {
+                // for (Card card : hand) {
+        //     if(card.getRank().equals(Card.Rank.SEVEN)){
+        //         handOrderedByRank.add(card);
+        //     }
+        // } 
+        
         return hand;
     }
 
-    public void setHand(List<Card> hand) {
+    public void setHand(ArrayList<Card> hand) {
         this.hand = hand;
     }
 }

@@ -1,64 +1,50 @@
 package de.htwberlin.kbe.gruppe4.inter;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 import de.htwberlin.kbe.gruppe4.impl.PlayerServiceImpl;
 
-@ExtendWith(MockitoExtension.class)
 public class PlayerServiceImplTest {
-    private PlayerServiceImpl playerService;
-
     @Mock
+    private DeckService mockDeckService;
+    private PlayerService playerService;
+    private Deck deck;
+    private Card card1;
+    private Card card2;
     private Player player;
 
-    @Mock
-    private Deck deck;
-
-    @Mock
-    private Card card;
-
-    @Mock
-    private DeckService deckService;
-
     @BeforeEach
-    public void setUp() {
-        // playerService = new PlayerServiceImpl();
-        // playerService.setDeckService(deckService);
-    }
-
-    @Test
-    public void testGetDeckService() {
-        // assertEquals(deckService, playerService.getDeckService());
-    }
-
-    @Test
-    public void testDealHand() {
-        playerService.dealHand(player, deck);
-        verify(deckService).dealHand(deck);
-        verify(player).setHand(deckService.dealHand(deck));
+    public void setup() {
+        playerService = new PlayerServiceImpl(mockDeckService);
+        deck = new Deck();
+        card1 = new Card(Card.Suit.SPADES, Card.Rank.EIGHT);
+        card2 = new Card(Card.Suit.CLUBS, Card.Rank.SEVEN);
+        player = new Player("player1");
     }
 
     @Test
     public void testDraw() {
-        playerService.draw(player, card);
-        verify(player).getHand();
-        verify(player).getHand().add(card);
+        playerService.draw(player, card1);
+        assertEquals(1, player.getHand().size());
+        assertEquals(card1, player.getHand().get(0));
     }
 
     @Test
     public void testPlay() {
-        when(player.getHand()).thenReturn(List.of(card));
-        assertEquals(card, playerService.play(player, 0, Card.Suit.CLUBS, Card.Rank.ACE));
-        verify(player).getHand();
-        verify(player).getHand().remove(0);
+        ArrayList<Card> hand = new ArrayList<>();
+        hand.add(card1);
+        hand.add(card2);
+        hand.add(card1);
+        player.setHand(hand);
+        Card playedCard = playerService.play(player, 2, Card.Suit.SPADES, Card.Rank.EIGHT);
+        assertEquals(card1, playedCard);
+        assertEquals(2, player.getHand().size());
     }
 }
+       

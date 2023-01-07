@@ -1,2 +1,139 @@
 2023-01-04 00:37:13,538 [INFO|de.htwberlin.kbe.gruppe4.impl.GameService|GameService] Rules for the game have been set: draw two on seven = true, choose suit on jack = true, reverse on ace = true
 2023-01-04 00:37:13,547 [INFO|de.htwberlin.kbe.gruppe4.impl.GameService|GameService] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-10 20:20:03,554 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-10 20:31:01,323 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-10 20:31:21,920 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-10 20:37:47,078 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-10 20:54:00,454 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-10 20:57:01,089 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:03:55,186 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:40:44,419 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:41:01,043 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:42:21,023 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = true, reverse on ace = false
+2023-01-11 17:42:29,770 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:44:55,309 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 17:45:51,735 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 17:46:26,739 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 17:48:22,388 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:48:22,390 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:49:26,439 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@66ce957f drew a ACE of CLUBS
+2023-01-11 17:49:28,773 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@66ce957f drew a ACE of CLUBS
+2023-01-11 17:50:12,026 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:50:12,027 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:52:29,747 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:52:29,749 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:52:29,767 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 17:52:29,783 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:52:29,783 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:52:29,786 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:52:29,786 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:52:29,788 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:52:29,788 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:52:29,795 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@4e517165 drew a ACE of CLUBS
+2023-01-11 17:52:29,802 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:52:40,433 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:52:40,434 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:52:48,170 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:52:48,171 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:54:32,220 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:54:32,222 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:55:39,706 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:55:39,707 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:55:39,723 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 17:55:39,734 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:55:39,735 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:55:39,736 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:55:39,737 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:55:39,737 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:55:39,737 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:55:39,742 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@3ce3db41 drew a ACE of CLUBS
+2023-01-11 17:55:39,749 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:55:54,135 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:55:54,136 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:56:07,707 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:56:07,707 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:56:58,172 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:56:58,173 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:56:58,189 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 17:56:58,200 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:56:58,201 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:56:58,203 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:56:58,203 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:56:58,205 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:56:58,205 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:56:58,211 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@3ce3db41 drew a ACE of CLUBS
+2023-01-11 17:56:58,217 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:57:57,000 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:57:57,002 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:57:57,019 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 17:57:57,030 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:57:57,031 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:57:57,033 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:57:57,034 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:57:57,035 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 17:57:57,035 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 17:57:57,041 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@3ce3db41 drew a ACE of CLUBS
+2023-01-11 17:57:57,047 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 17:58:29,990 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 18:03:57,030 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:03:57,031 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:07:02,165 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 18:07:15,421 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 18:08:49,849 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 18:09:16,532 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:09:16,533 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:09:16,552 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:09:16,552 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:09:16,555 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:09:16,555 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:09:16,556 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:09:16,557 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:09:16,571 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 18:12:59,891 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:12:59,893 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:12:59,903 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:12:59,903 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:12:59,905 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:12:59,905 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:12:59,906 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:12:59,906 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:12:59,918 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 18:13:57,875 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:13:57,876 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:13:57,883 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:13:57,884 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:13:57,885 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:13:57,885 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:13:57,887 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:13:57,887 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:13:57,899 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
+2023-01-11 18:15:40,317 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 18:16:04,081 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 18:16:14,497 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:16:14,498 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:16:29,560 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:16:29,562 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:17:04,266 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1b8a29df drew a SEVEN of CLUBS
+2023-01-11 18:17:24,565 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1b8a29df drew a SEVEN of CLUBS
+2023-01-11 18:17:49,943 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1b8a29df drew a SEVEN of CLUBS
+2023-01-11 18:18:17,305 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:18:17,306 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:18:25,388 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:18:25,389 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:18:52,295 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:18:52,296 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:24:42,983 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:24:42,984 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:24:45,950 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:24:45,951 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:27:50,034 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:27:50,035 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:27:50,044 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 18:27:50,045 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:27:50,045 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:27:50,046 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:27:50,046 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:27:50,047 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of CLUBS was placed on table.
+2023-01-11 18:27:50,047 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of CLUBS
+2023-01-11 18:27:50,048 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@327af41b drew a SEVEN of CLUBS
+2023-01-11 18:27:50,049 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true

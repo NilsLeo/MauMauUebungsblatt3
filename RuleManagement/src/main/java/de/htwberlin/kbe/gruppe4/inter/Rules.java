@@ -4,14 +4,14 @@ public class Rules {
     private boolean drawTwoOnSeven;
     private boolean chooseSuitOnJack;
     private boolean reverseOnAce;
-    private boolean chosenSuitTemporarilyEnabled;
+    private boolean reversed;
     private Card.Suit suit;
 
     public Rules() {
         drawTwoOnSeven = false;
         chooseSuitOnJack = false;
         reverseOnAce = false;
-        chosenSuitTemporarilyEnabled = false;
+        reversed = false;
     }
     public void setSuit(Card.Suit suit){
         this.suit = suit;
@@ -26,9 +26,6 @@ public class Rules {
 
     public void setReverseOnAce(boolean reverseOnAce) {
         this.reverseOnAce = reverseOnAce;
-    }
-    public void setChosenSuitTemporarilyEnabled(boolean chosenSuitTemporarilyEnabled) {
-        this.chosenSuitTemporarilyEnabled = chosenSuitTemporarilyEnabled;
     }
 
     public Card.Suit getSuit(){
@@ -46,8 +43,11 @@ public class Rules {
     public boolean isReverseOnAce() {
         return reverseOnAce;
     }
-    public boolean isChosenSuitTemporarilyEnabled() {
-        return chosenSuitTemporarilyEnabled;
+    public void setReversed(boolean reversed) {
+        this.reversed = reversed;
+    }
+    public boolean isReversed() {
+        return reversed;
     }
 
 }

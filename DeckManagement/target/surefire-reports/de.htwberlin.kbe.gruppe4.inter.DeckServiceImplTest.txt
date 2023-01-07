@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: de.htwberlin.kbe.gruppe4.inter.DeckServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.32 s <<< FAILURE! - in de.htwberlin.kbe.gruppe4.inter.DeckServiceImplTest
+testShuffle  Time elapsed: 0.008 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <[ACE of CLUBS, SEVEN of HEARTS, EIGHT of DIAMONDS]>
+	at de.htwberlin.kbe.gruppe4.inter.DeckServiceImplTest.testShuffle(DeckServiceImplTest.java:56)
+

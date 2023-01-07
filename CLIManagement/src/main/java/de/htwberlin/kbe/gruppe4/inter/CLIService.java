@@ -23,12 +23,15 @@ public interface CLIService {
     List<String> getPlayerNames();
     void announceDrawTwoCards();
     void displaySuits();
-    String getSuitChoice();
+    Card.Suit getSuitChoice();
     void announceChosenSuit(Card.Suit suit);
     void displayPlayOrDraw();
     void displayDraw(Card.Suit suit, Card.Rank rank);
     void displaySuitChoice();
     void displayPlay(Card.Suit suit, Card.Rank rank);
     void announceError();
+    void announceInvalidMauMauCall();
+    void announceMauMau();
+    void announceForgotToSayMauMau();
 
 }

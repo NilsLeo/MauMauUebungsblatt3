@@ -1,12 +1,14 @@
 package de.htwberlin.kbe.gruppe4.impl;
+import com.google.inject.Inject;
 
-import javax.inject.Inject;
 import de.htwberlin.kbe.gruppe4.inter.*;
 
 public class PlayerServiceImpl implements PlayerService {
-    private DeckServiceImpl deckService;
 
-    public PlayerServiceImpl(DeckServiceImpl deckService){
+    private DeckService deckService;
+
+    @Inject
+    public PlayerServiceImpl(DeckService deckService){
         this.deckService = deckService;
     }
 

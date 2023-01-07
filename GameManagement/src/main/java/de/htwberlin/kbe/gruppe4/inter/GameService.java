@@ -10,7 +10,7 @@ public interface GameService {
     Card drawCard(Player player);
     Card playCard(Player player, int index);
     boolean isCardValid(Card card);
-    void updateCurrentPlayer(int noOfTurns);
+    void setCurrentPlayer(int noOfTurns);
     List<Player> getPlayers();
     int getCurrentPlayer();
     Card.Suit getLeadSuit();
@@ -20,5 +20,13 @@ public interface GameService {
     boolean isDrawTwoOnSeven();
     boolean isChooseSuitOnJack();
     boolean isReverseOnAce();
+    void setPlayers(List<String> names);
+    void setDeckService(DeckService deckService);
+    Deck getDeck();
+    Rules getRules();
+    List<Card> getTable();
+    void setReversed(boolean reversed);
+    boolean isReversed();
+    void setSuitChoice(Card.Suit suit);
   }
   
