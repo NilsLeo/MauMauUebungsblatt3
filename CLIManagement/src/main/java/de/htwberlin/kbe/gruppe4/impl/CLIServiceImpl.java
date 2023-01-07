@@ -44,14 +44,33 @@ public class CLIServiceImpl implements CLIService {
     }
 
     @Override
-    public void displayLead(Card.Suit suit, Card.Rank rank) {
-        System.out.println("Top card on the table: " + rank + " of " + suit);
+    public void displayPlayOrDraw() {
+        System.out.println("Enter 'p' to play a card or 'd' to draw a card:");
     }
 
     @Override
+    public void displayDraw(Card.Suit suit, Card.Rank rank) {
+        System.out.println("You drew the " + rank + " of " + suit + ".");
+    }
+    
+
+    @Override
+    public void displayLead(Card.Suit suit, Card.Rank rank) {
+        System.out.println("Top card on the table: " + rank + " of " + suit);
+    }
+    @Override
     public String getPlayOrDraw() {
-        System.out.print("Enter the number of the card you want to play (or 'd' to draw a card): ");
         return scanner.nextLine();
+    }
+
+    @Override
+    public void displayPlay(Card.Suit suit, Card.Rank rank) {
+        System.out.println("You played the " + rank + " of " + suit + ".");
+    }
+
+    @Override
+    public void announceError(){
+        System.out.println("Errorr");
     }
 
     @Override
@@ -100,6 +119,12 @@ public class CLIServiceImpl implements CLIService {
         System.out.println("3. Hearts");
         System.out.println("4. Diamonds");
     }
+
+    @Override
+    public void displaySuitChoice() {
+        System.out.println("Please choose a suit: ");
+    }
+    
 
     @Override
     public String getSuitChoice() {

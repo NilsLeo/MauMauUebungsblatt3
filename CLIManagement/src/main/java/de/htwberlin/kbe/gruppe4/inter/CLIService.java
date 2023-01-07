@@ -25,4 +25,10 @@ public interface CLIService {
     void displaySuits();
     String getSuitChoice();
     void announceChosenSuit(Card.Suit suit);
+    void displayPlayOrDraw();
+    void displayDraw(Card.Suit suit, Card.Rank rank);
+    void displaySuitChoice();
+    void displayPlay(Card.Suit suit, Card.Rank rank);
+    void announceError();
+
 }
