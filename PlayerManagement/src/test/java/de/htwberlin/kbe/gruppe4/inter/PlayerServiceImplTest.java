@@ -32,7 +32,7 @@ public class PlayerServiceImplTest {
     @BeforeEach
     public void setUp() {
         playerService = new PlayerServiceImpl();
-        playerService.setDeckService(deckService);
+        // playerService.setDeckService(deckService);
     }
 
     @Test

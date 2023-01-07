@@ -4,7 +4,7 @@ import javax.inject.Inject;
 import de.htwberlin.kbe.gruppe4.inter.*;
 
 public class PlayerServiceImpl implements PlayerService {
-    private DeckService deckService;
+    private DeckServiceImpl deckService;
 
     @Override
     public DeckService getDeckService() {
@@ -13,7 +13,7 @@ public class PlayerServiceImpl implements PlayerService {
 
     @Override
     @Inject
-    public void setDeckService(DeckService deckService) {
+    public void setDeckService(DeckServiceImpl deckService) {
         this.deckService = deckService;
     }
 
