@@ -3,7 +3,7 @@ package de.htwberlin.kbe.gruppe4.impl;
 import de.htwberlin.kbe.gruppe4.inter.Card;
 import de.htwberlin.kbe.gruppe4.inter.Rules;
 import de.htwberlin.kbe.gruppe4.inter.RulesService;
-import javax.inject.Singleton;
+
 
 
 public class RulesServiceImpl implements RulesService {

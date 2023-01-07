@@ -6,7 +6,7 @@ import de.htwberlin.kbe.gruppe4.inter.CardService;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.inject.Singleton;
+
 
 public class CardServiceImpl implements CardService {
     @Override

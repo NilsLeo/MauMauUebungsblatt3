@@ -6,7 +6,7 @@ import de.htwberlin.kbe.gruppe4.inter.Card;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import javax.inject.Singleton;
+
 
 
 public class CLIServiceImpl implements CLIService {

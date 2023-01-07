@@ -2,7 +2,7 @@ package de.htwberlin.kbe.gruppe4.impl;
 
 import javax.inject.Inject;
 import de.htwberlin.kbe.gruppe4.inter.*;
-import javax.inject.Singleton;
+
 
 public class PlayerServiceImpl implements PlayerService {
     private DeckService deckService;

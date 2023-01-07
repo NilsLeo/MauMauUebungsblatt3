@@ -1,0 +1,2 @@
+2023-01-04 00:37:13,538 [INFO|de.htwberlin.kbe.gruppe4.impl.GameService|GameService] Rules for the game have been set: draw two on seven = true, choose suit on jack = true, reverse on ace = true
+2023-01-04 00:37:13,547 [INFO|de.htwberlin.kbe.gruppe4.impl.GameService|GameService] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
