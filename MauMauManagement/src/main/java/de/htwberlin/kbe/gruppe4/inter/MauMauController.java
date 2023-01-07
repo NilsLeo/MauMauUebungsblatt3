@@ -82,7 +82,7 @@ public class MauMauController {
         CLIServiceImpl cliServiceImpl = new CLIServiceImpl();
         DeckServiceImpl deckServiceImpl = new DeckServiceImpl();
         RulesServiceImpl rulesServiceImpl = new RulesServiceImpl();
-        PlayerServiceImpl playerServiceImpl = new PlayerServiceImpl();
+        PlayerServiceImpl playerServiceImpl = new PlayerServiceImpl(deckServiceImpl);
         GameServiceImpl gameServiceImpl = new GameServiceImpl(names, deckServiceImpl, rulesServiceImpl, playerServiceImpl);
         MauMauController controller = new MauMauController(cliServiceImpl, gameServiceImpl);
         // Injector injector = Guice.createInjector(new MauMauModule());

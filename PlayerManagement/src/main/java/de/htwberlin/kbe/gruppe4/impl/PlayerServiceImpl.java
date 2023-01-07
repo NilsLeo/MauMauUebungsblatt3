@@ -6,14 +6,7 @@ import de.htwberlin.kbe.gruppe4.inter.*;
 public class PlayerServiceImpl implements PlayerService {
     private DeckServiceImpl deckService;
 
-    @Override
-    public DeckService getDeckService() {
-        return this.deckService;
-    }
-
-    @Override
-    @Inject
-    public void setDeckService(DeckServiceImpl deckService) {
+    public PlayerServiceImpl(DeckServiceImpl deckService){
         this.deckService = deckService;
     }
 

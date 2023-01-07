@@ -3,3 +3,7 @@
 2023-01-07 22:10:14,481 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = false, reverse on ace = true
 2023-01-07 22:21:40,033 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = true, reverse on ace = true
 2023-01-07 22:22:00,476 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = true, choose suit on jack = true, reverse on ace = true
+2023-01-07 22:32:31,556 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-07 22:33:05,268 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-07 22:34:42,203 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-07 22:39:25,275 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
