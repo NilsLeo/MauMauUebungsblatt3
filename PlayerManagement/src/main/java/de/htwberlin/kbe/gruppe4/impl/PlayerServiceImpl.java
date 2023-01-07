@@ -3,7 +3,6 @@ package de.htwberlin.kbe.gruppe4.impl;
 import javax.inject.Inject;
 import de.htwberlin.kbe.gruppe4.inter.*;
 
-
 public class PlayerServiceImpl implements PlayerService {
     private DeckService deckService;
 
@@ -17,8 +16,6 @@ public class PlayerServiceImpl implements PlayerService {
     public void setDeckService(DeckService deckService) {
         this.deckService = deckService;
     }
-
-
 
     @Override
     public void dealHand(Player player, Deck deck) {
@@ -42,5 +39,4 @@ public class PlayerServiceImpl implements PlayerService {
         player.getHand().remove(index);
         return card;
     }
-
 }

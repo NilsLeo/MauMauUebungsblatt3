@@ -6,16 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DeckManagement" />
-        <module name="CLIManagement" />
-        <module name="PlayerManagement" />
         <module name="CardManagement" />
+        <module name="DeckManagement" />
         <module name="GameManagement" />
+        <module name="CLIManagement" />
         <module name="RuleManagement" />
+        <module name="PlayerManagement" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Configuration" target="19" />
+      <module name="MauMau" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

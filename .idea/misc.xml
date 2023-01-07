@@ -9,12 +9,12 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/Configuration/pom.xml" />
         <option value="$PROJECT_DIR$/CLIManagement/pom.xml" />
         <option value="$PROJECT_DIR$/CardManagement/pom.xml" />
         <option value="$PROJECT_DIR$/Configuration/pom.xml" />
         <option value="$PROJECT_DIR$/DeckManagement/pom.xml" />
         <option value="$PROJECT_DIR$/GameManagement/pom.xml" />
+        <option value="$PROJECT_DIR$/MauMauManagement/pom.xml" />
         <option value="$PROJECT_DIR$/PlayerManagement/pom.xml" />
         <option value="$PROJECT_DIR$/RuleManagement/pom.xml" />
       </set>

@@ -1,11 +1,14 @@
 package de.htwberlin.kbe.gruppe4.impl;
 import javax.inject.Inject;
 import de.htwberlin.kbe.gruppe4.inter.*;
+
 import org.apache.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GameService {
+import de.htwberlin.kbe.gruppe4.inter.GameService;
+
+public class GameServiceImpl implements GameService {
     private static final Logger logger = Logger.getLogger(GameService.class);
     private DeckService deckService;
     RulesService rulesService;
@@ -18,7 +21,7 @@ public class GameService {
 
 
     @Inject
-    public GameService(List<String> names, DeckService deckService, RulesService rulesService,
+    public GameServiceImpl(List<String> names, DeckService deckService, RulesService rulesService,
             PlayerService playerService) {
         this.players = new ArrayList<>();
         for (String name : names) {
@@ -32,6 +35,8 @@ public class GameService {
         this.rulesService = rulesService;
         this.playerService = playerService;
     }
+
+    @Override
     public void setRules(boolean drawTwoOnSeven, boolean chooseSuitOnJack, boolean reverseOnAce) {
         rules.setDrawTwoOnSeven(drawTwoOnSeven);
         rules.setChooseSuitOnJack(chooseSuitOnJack);
@@ -41,6 +46,7 @@ public class GameService {
                 ", reverse on ace = " + reverseOnAce);
     }
 
+    @Override
     public void startGame() {
         deckService.shuffle(deck);
         for (Player player : players) {
@@ -48,28 +54,34 @@ public class GameService {
         }
     }
 
+    @Override
     public Card getLeadCard() {
         return deckService.deal(deck);
     }
 
+    @Override
     public void addCardToTable(Card card) {
         table.add(card);
     }
 
+    @Override
     public Card drawCard(Player player) {
         Card card = deckService.deal(deck);
         playerService.draw(player, card);
         return card;
     }
 
+    @Override
     public Card playCard(Player player, int index) {
         return playerService.play(player, index, getLeadSuit(), getLeadRank());
     }
 
+    @Override
     public boolean isCardValid(Card card) {
         return rulesService.isCardValid(card, getLeadSuit(), getLeadRank(), rules);
     }
 
+    @Override
     public void updateCurrentPlayer(int noOfTurns) {
         currentPlayer += noOfTurns;
         if (currentPlayer < 0) {
@@ -79,22 +91,27 @@ public class GameService {
         }
     }
 
+    @Override
     public List<Player> getPlayers() {
         return players;
     }
 
+    @Override
     public int getCurrentPlayer() {
         return currentPlayer;
     }
 
+    @Override
     public Card.Suit getLeadSuit() {
         return table.get(0).getSuit();
     }
 
+    @Override
     public Card.Rank getLeadRank() {
         return table.get(0).getRank();
     }
 
+    @Override
     public boolean isGameOver() {
         for (Player player : players) {
             if (player.getHand().isEmpty()) {
@@ -103,6 +120,8 @@ public class GameService {
         }
         return false;
     }
+
+    @Override
     public boolean isCardValid(Card card, Card lead) {
         if (card.getSuit() == lead.getSuit()) {
             return true;
@@ -112,15 +131,18 @@ public class GameService {
             return false;
         }
     }
-    
+
+    @Override
     public boolean isDrawTwoOnSeven() {
         return rules.isDrawTwoOnSeven();
     }
-    
+
+    @Override
     public boolean isChooseSuitOnJack() {
         return rules.isChooseSuitOnJack();
     }
-    
+
+    @Override
     public boolean isReverseOnAce() {
         return rules.isReverseOnAce();
     }
