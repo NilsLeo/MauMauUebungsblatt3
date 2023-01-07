@@ -11,24 +11,19 @@ public class RulesServiceImpl implements RulesService {
         Card.Suit suit = card.getSuit();
         Card.Rank rank = card.getRank();
         boolean valid = false;
-        System.out.println("chosensuit " + rules.getSuit() + " cardsuit " + suit);
+        // System.out.println("chosensuit " + rules.getSuit() + " cardsuit " + suit);
         if (rules.isChooseSuitOnJack()) {
             if (rules.getSuit() != null) {
-                System.out.println("r1");
                 valid = (rules.getSuit() == suit) ? (true) : (false);
-                System.out.println("r1v " + valid);
                 rules.setSuit(null);
             } else {
-                System.out.println("r2");
 
                 valid = (leadSuit == suit || leadRank == rank) ? (true) : (false);
             }
         } else {
-            System.out.println("r3");
 
             valid = (leadSuit == suit || leadRank == rank) ? (true) : (false);
         }
-        System.out.println("valid: " + valid);
         return valid;
 
     }

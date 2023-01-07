@@ -165,4 +165,18 @@ public class CLIServiceImpl implements CLIService {
 
 
     }
+
+    @Override
+    public void announceNoCardsLeft() {
+        System.out.println("There are no Cards left to draw. You must play a card");
+
+        
+    }
+
+    @Override
+    public void announceDuplicateCardError() {
+        System.out.println("Error. There are duplicate Cards");
+
+        
+    }
 }

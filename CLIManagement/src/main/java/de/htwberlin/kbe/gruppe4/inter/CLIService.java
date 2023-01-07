@@ -10,6 +10,8 @@ public interface CLIService {
     void displayHand(String name, List<Card> hand);
 
     void displayLead(Card.Suit suit, Card.Rank rank);
+    void announceNoCardsLeft();
+    void announceDuplicateCardError();
 
     String getPlayOrDraw();
 

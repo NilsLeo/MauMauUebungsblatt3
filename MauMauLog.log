@@ -646,3 +646,147 @@
 2023-01-11 16:28:13,228 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the SEVEN of DIAMONDS
 2023-01-11 16:28:17,323 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] JACK of DIAMONDS was placed on table.
 2023-01-11 16:28:17,323 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the JACK of DIAMONDS
+2023-01-07 22:59:00,839 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = true, reverse on ace = false
+2023-01-07 22:59:00,841 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-07 22:59:00,841 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] JACK of SPADES was placed on table.
+2023-01-07 22:59:00,841 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the JACK of SPADES
+2023-01-11 22:37:32,745 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = true, reverse on ace = false
+2023-01-11 22:37:32,748 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 22:37:32,748 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] KING of SPADES was placed on table.
+2023-01-11 22:37:32,748 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the KING of SPADES
+2023-01-11 22:37:47,109 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = true
+2023-01-11 22:37:47,112 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 22:37:47,112 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] EIGHT of CLUBS was placed on table.
+2023-01-11 22:37:47,112 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the EIGHT of CLUBS
+2023-01-11 22:37:50,438 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a NINE of HEARTS
+2023-01-11 22:37:51,102 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a NINE of DIAMONDS
+2023-01-11 22:37:51,722 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1d2adfbe drew a EIGHT of HEARTS
+2023-01-11 22:37:52,311 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a JACK of CLUBS
+2023-01-11 22:37:52,930 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a ACE of SPADES
+2023-01-11 22:37:53,579 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1d2adfbe drew a NINE of CLUBS
+2023-01-11 22:37:56,620 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a ACE of HEARTS
+2023-01-11 22:38:01,978 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a SEVEN of SPADES
+2023-01-11 22:38:06,129 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1d2adfbe drew a KING of CLUBS
+2023-01-11 22:38:13,052 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] EIGHT of DIAMONDS was placed on table.
+2023-01-11 22:38:13,052 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the EIGHT of DIAMONDS
+2023-01-11 22:38:17,468 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a SEVEN of HEARTS
+2023-01-11 22:38:20,136 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of DIAMONDS was placed on table.
+2023-01-11 22:38:20,136 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of DIAMONDS
+2023-01-11 22:39:09,432 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = true, reverse on ace = true
+2023-01-11 22:39:09,435 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 22:39:09,436 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] TEN of DIAMONDS was placed on table.
+2023-01-11 22:39:09,436 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the TEN of DIAMONDS
+2023-01-11 22:39:13,358 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a SEVEN of SPADES
+2023-01-11 22:39:16,161 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of DIAMONDS was placed on table.
+2023-01-11 22:39:16,161 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of DIAMONDS
+2023-01-11 22:39:52,163 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = true
+2023-01-11 22:39:52,166 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 22:39:52,166 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] TEN of CLUBS was placed on table.
+2023-01-11 22:39:52,166 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the TEN of CLUBS
+2023-01-11 22:39:57,524 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a ACE of CLUBS
+2023-01-11 22:40:01,454 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a ACE of SPADES
+2023-01-11 22:40:05,919 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1d2adfbe drew a ACE of DIAMONDS
+2023-01-11 22:40:10,252 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] TEN of SPADES was placed on table.
+2023-01-11 22:40:10,252 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the TEN of SPADES
+2023-01-11 22:40:15,518 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@36902638 drew a TEN of CLUBS
+2023-01-11 22:40:21,114 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a NINE of CLUBS
+2023-01-11 22:40:25,945 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of SPADES was placed on table.
+2023-01-11 22:40:25,945 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of SPADES
+2023-01-11 22:44:22,662 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = true
+2023-01-11 22:44:22,664 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 22:44:22,664 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] QUEEN of HEARTS was placed on table.
+2023-01-11 22:44:22,664 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the QUEEN of HEARTS
+2023-01-11 22:48:16,848 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = true
+2023-01-11 22:48:16,851 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 22:48:16,851 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] QUEEN of HEARTS was placed on table.
+2023-01-11 22:48:16,851 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the QUEEN of HEARTS
+2023-01-11 22:48:24,451 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a SEVEN of HEARTS
+2023-01-11 22:48:28,798 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] NINE of HEARTS was placed on table.
+2023-01-11 22:48:28,798 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the NINE of HEARTS
+2023-01-11 22:48:36,922 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a SEVEN of DIAMONDS
+2023-01-11 22:48:38,125 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1d2adfbe drew a TEN of DIAMONDS
+2023-01-11 22:48:44,223 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] NINE of CLUBS was placed on table.
+2023-01-11 22:48:44,223 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the NINE of CLUBS
+2023-01-11 22:48:49,135 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a QUEEN of HEARTS
+2023-01-11 22:48:50,138 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@36902638 drew a TEN of HEARTS
+2023-01-11 22:48:51,142 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a QUEEN of HEARTS
+2023-01-11 22:48:53,090 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1d2adfbe drew a QUEEN of HEARTS
+2023-01-11 22:49:03,372 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@223d2c72 drew a EIGHT of CLUBS
+2023-01-11 22:49:04,317 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a SEVEN of SPADES
+2023-01-11 22:49:55,664 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] SEVEN of CLUBS was placed on table.
+2023-01-11 22:49:55,664 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the SEVEN of CLUBS
+2023-01-11 22:50:07,183 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] SEVEN of DIAMONDS was placed on table.
+2023-01-11 22:50:07,184 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the SEVEN of DIAMONDS
+2023-01-11 22:50:09,910 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1d2adfbe drew a QUEEN of HEARTS
+2023-01-11 22:50:17,618 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@223d2c72 drew a NINE of HEARTS
+2023-01-11 22:50:27,354 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] NINE of DIAMONDS was placed on table.
+2023-01-11 22:50:27,355 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the NINE of DIAMONDS
+2023-01-11 22:50:57,164 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = true
+2023-01-11 22:50:57,166 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 22:50:57,166 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of SPADES was placed on table.
+2023-01-11 22:50:57,166 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of SPADES
+2023-01-11 22:51:02,731 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a ACE of SPADES
+2023-01-11 22:51:04,247 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a SEVEN of DIAMONDS
+2023-01-11 22:51:05,326 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1d2adfbe drew a QUEEN of DIAMONDS
+2023-01-11 22:51:06,201 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@36902638 drew a ACE of CLUBS
+2023-01-11 22:51:15,960 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@223d2c72 drew a JACK of SPADES
+2023-01-11 22:51:24,457 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of SPADES was placed on table.
+2023-01-11 22:51:24,458 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of SPADES
+2023-01-11 22:52:05,176 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] JACK of SPADES was placed on table.
+2023-01-11 22:52:05,176 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the JACK of SPADES
+2023-01-11 23:15:54,420 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-11 23:15:54,422 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 23:15:54,422 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] QUEEN of HEARTS was placed on table.
+2023-01-11 23:15:54,422 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the QUEEN of HEARTS
+2023-01-11 23:15:57,843 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a SEVEN of CLUBS
+2023-01-11 23:15:58,321 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a ACE of DIAMONDS
+2023-01-11 23:15:58,708 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a QUEEN of SPADES
+2023-01-11 23:15:59,082 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a TEN of HEARTS
+2023-01-11 23:15:59,301 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a JACK of SPADES
+2023-01-11 23:15:59,799 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a KING of HEARTS
+2023-01-11 23:16:00,414 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a TEN of SPADES
+2023-01-11 23:16:00,815 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a JACK of CLUBS
+2023-01-11 23:16:01,216 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a NINE of HEARTS
+2023-01-11 23:16:01,608 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a SEVEN of HEARTS
+2023-01-11 23:16:01,981 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a JACK of DIAMONDS
+2023-01-11 23:16:02,411 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a NINE of SPADES
+2023-01-11 23:16:02,808 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a SEVEN of DIAMONDS
+2023-01-11 23:16:03,177 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a EIGHT of HEARTS
+2023-01-11 23:16:03,567 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a JACK of HEARTS
+2023-01-11 23:16:03,959 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a EIGHT of DIAMONDS
+2023-01-11 23:16:04,385 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a TEN of DIAMONDS
+2023-01-11 23:16:04,822 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a EIGHT of SPADES
+2023-01-11 23:16:05,292 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a ACE of HEARTS
+2023-01-11 23:16:05,734 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@72967906 drew a QUEEN of DIAMONDS
+2023-01-11 23:16:06,914 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@1a482e36 drew a SEVEN of SPADES
+2023-01-11 23:20:56,560 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-11 23:20:56,563 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 23:20:56,563 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of HEARTS was placed on table.
+2023-01-11 23:20:56,563 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of HEARTS
+2023-01-11 23:23:29,961 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-11 23:23:29,963 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-11 23:23:29,963 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] EIGHT of DIAMONDS was placed on table.
+2023-01-11 23:23:29,963 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the EIGHT of DIAMONDS
+2023-01-11 23:23:30,809 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a SEVEN of SPADES
+2023-01-11 23:23:32,047 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a TEN of DIAMONDS
+2023-01-11 23:23:32,434 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a SEVEN of DIAMONDS
+2023-01-11 23:23:32,813 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a NINE of DIAMONDS
+2023-01-11 23:23:33,273 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a KING of SPADES
+2023-01-11 23:23:33,752 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a ACE of HEARTS
+2023-01-11 23:23:34,368 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a JACK of HEARTS
+2023-01-11 23:23:35,038 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a ACE of CLUBS
+2023-01-11 23:23:35,549 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a JACK of SPADES
+2023-01-11 23:23:36,261 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a EIGHT of HEARTS
+2023-01-11 23:23:37,578 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a NINE of HEARTS
+2023-01-11 23:23:38,188 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a KING of DIAMONDS
+2023-01-11 23:25:40,207 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a QUEEN of DIAMONDS
+2023-01-11 23:25:40,518 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a TEN of SPADES
+2023-01-11 23:25:40,786 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a QUEEN of HEARTS
+2023-01-11 23:25:41,092 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a ACE of DIAMONDS
+2023-01-11 23:25:41,419 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a SEVEN of HEARTS
+2023-01-11 23:25:41,937 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a JACK of DIAMONDS
+2023-01-11 23:25:42,233 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a ACE of SPADES
+2023-01-11 23:25:42,497 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@49ec71f8 drew a SEVEN of CLUBS
+2023-01-11 23:25:42,785 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a TEN of HEARTS
+2023-01-11 23:25:53,976 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] NINE of DIAMONDS was placed on table.
+2023-01-11 23:25:53,976 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the NINE of DIAMONDS

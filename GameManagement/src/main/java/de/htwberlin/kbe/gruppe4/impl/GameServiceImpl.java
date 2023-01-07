@@ -1,10 +1,13 @@
 package de.htwberlin.kbe.gruppe4.impl;
+
 import javax.inject.Inject;
 import de.htwberlin.kbe.gruppe4.inter.*;
 
 import org.apache.log4j.Logger;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class GameServiceImpl implements GameService {
     private static final Logger logger = Logger.getLogger(GameService.class);
@@ -16,7 +19,6 @@ public class GameServiceImpl implements GameService {
     private List<Card> table;
     private final Rules rules;
     private int currentPlayer;
-
 
     @Inject
     public GameServiceImpl(DeckService deckService, RulesService rulesService,
@@ -32,7 +34,7 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
-    public void setPlayers(List<String> names){
+    public void setPlayers(List<String> names) {
         for (String name : names) {
             this.players.add(new Player(name));
         }
@@ -43,8 +45,8 @@ public class GameServiceImpl implements GameService {
         rules.setDrawTwoOnSeven(drawTwoOnSeven);
         rules.setChooseSuitOnJack(chooseSuitOnJack);
         rules.setReverseOnAce(reverseOnAce);
-        logger.info("Rules for the game have been set: draw two on seven = " + drawTwoOnSeven + 
-                ", choose suit on jack = " + chooseSuitOnJack + 
+        logger.info("Rules for the game have been set: draw two on seven = " + drawTwoOnSeven +
+                ", choose suit on jack = " + chooseSuitOnJack +
                 ", reverse on ace = " + reverseOnAce);
     }
 
@@ -62,17 +64,58 @@ public class GameServiceImpl implements GameService {
     public Card getLeadCard() {
         return table.get(table.size() - 1);
 
+    }
 
+    @Override
+    public boolean hasCardsLeft() {
+        return !deck.getCards().isEmpty();
+    }
+
+    @Override
+    public boolean hasDuplicateCards() {
+        // list to store all the cards in the game
+        List<Card> allCards = new ArrayList<>();
+        // add all cards in the deck to the list
+        allCards.addAll(deck.getCards());
+        // add all cards on the table to the list
+        allCards.addAll(table);
+        // check all players' hands for duplicates
+        for (Player player : players) {
+            // add all cards in the player's hand to the list
+            allCards.addAll(player.getHand());
+        }
+        // check the combined list for duplicates
+        return hasDuplicates(allCards);
+    }
+    @Override
+    public boolean hasDuplicates(List<Card> cards) {
+        // use a set to check for duplicates
+        Set<Card> set = new HashSet<>();
+        for (Card card : cards) {
+            if (!set.add(card)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
     public void addCardToTable(Card card) {
+        // adding a card to the table
         table.add(card);
         logger.info(card.getRank() + " of " + card.getSuit() + " was placed on table.");
         logger.debug("Top card is the " + getLeadRank() + " of " + getLeadSuit());
-        // removes every card but the lead card and adds them back to deck and shuffles the deck every time a card is placed
-        table = deckService.renewDeckFromTable(deck, table);
-        
+        // Check if the deck has less than 4 cards remaining
+        if(deck.getCards().size() <= 3){
+            // removes every card but the lead card 
+            table.removeIf(tableCard -> !tableCard.equals(getLeadCard()));
+            // adds them back to deck 
+            deck.addAll(table);
+            // clear the table 
+            table.clear();
+            //shuffles the deck
+            deckService.shuffle(deck);
+        }
     }
 
     @Override
@@ -97,14 +140,24 @@ public class GameServiceImpl implements GameService {
 
     @Override
     public void setCurrentPlayer(int noOfTurns) {
-        currentPlayer += noOfTurns;
+        // check if game is in reverse order
+        if (isReversed()) {
+            // decrement current player by noOfTurns
+            currentPlayer -= noOfTurns;
+        } else {
+            // increment current player by noOfTurns
+            currentPlayer += noOfTurns;
+
+        }
+
+        // check if current player is less than 0
         if (currentPlayer < 0) {
+            // set current player to last player in the list
             currentPlayer = players.size() - 1;
         } else if (currentPlayer == players.size()) {
+            // set current player to first player in the list
             currentPlayer = 0;
         }
-        
-
     }
 
     @Override
@@ -157,33 +210,37 @@ public class GameServiceImpl implements GameService {
     public boolean isReverseOnAce() {
         return rules.isReverseOnAce();
     }
+
     @Override
     public boolean isReversed() {
         return rules.isReversed();
     }
+
     @Override
     public void setReversed(boolean reversed) {
-        rules.setReversed(reversed);;
+        rules.setReversed(reversed);
+        ;
     }
 
     @Override
-    public Deck getDeck(){
+    public Deck getDeck() {
         return deck;
     }
+
     @Override
-    public Rules getRules(){
+    public Rules getRules() {
         return rules;
     }
 
     @Override
     public void setDeckService(DeckService deckService) {
         this.deckService = deckService;
-        
+
     }
 
     @Override
     public List<Card> getTable() {
-        
+
         return table;
     }
 

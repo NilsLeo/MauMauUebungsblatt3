@@ -28,5 +28,8 @@ public interface GameService {
     void setReversed(boolean reversed);
     boolean isReversed();
     void setSuitChoice(Card.Suit suit);
+    boolean hasDuplicates(List<Card> cards);
+    boolean hasDuplicateCards();
+    boolean hasCardsLeft();
   }
   

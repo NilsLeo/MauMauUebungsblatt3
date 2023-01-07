@@ -36,8 +36,8 @@ public class MauMauController {
             Player player = gameService.getPlayers().get(gameService.getCurrentPlayer());
             if (nextPlayerDraws != 0) {
                 for (int i = 0; i < nextPlayerDraws; i++) {
-                    Card drawnCard = gameService.drawCard(player);
-                    cli.displayDraw(drawnCard.getSuit(), drawnCard.getRank());
+                    drawCard(player);
+
                 }
                 nextPlayerDraws = 0;
             }
@@ -54,8 +54,7 @@ public class MauMauController {
         int noOfTurns = 1;
         try {
             if (input.equals("d")) {
-                Card drawnCard = gameService.drawCard(player);
-                cli.displayDraw(drawnCard.getSuit(), drawnCard.getRank());
+                drawCard(player);
                 gameService.setCurrentPlayer(noOfTurns);
             } else {
                 int index = 0;
@@ -97,15 +96,13 @@ public class MauMauController {
 
                     if (gameService.isReverseOnAce() && played.getRank() == Card.Rank.ACE) {
                         gameService.setReversed(!gameService.isReversed());
-                        noOfTurns = (gameService.isReversed()) ? (noOfTurns = -1 ): (noOfTurns);
                     }
                     // 2 Karten Strafziehen
                     if (player.getHand().size() == 1 && !rememberedToSayMauMau) {
                         cli.announceForgotToSayMauMau();
-                        Card drawnCard = gameService.drawCard(player);
-                        cli.displayDraw(drawnCard.getSuit(), drawnCard.getRank());
-                        Card drawnCard2 = gameService.drawCard(player);
-                        cli.displayDraw(drawnCard2.getSuit(), drawnCard2.getRank());
+                        drawCard(player);
+    
+                        drawCard(player);
                     }
                     if (player.getHand().size() == 1) {
                         noOfTurns = -1;
@@ -121,6 +118,17 @@ public class MauMauController {
     public String getPlayOrDraw() {
         cli.displayPlayOrDraw();
         return cli.getPlayOrDraw();
+    }
+
+    public void drawCard(Player player){
+        if(!gameService.hasCardsLeft()){
+            cli.announceNoCardsLeft();
+        }
+        else{
+
+            Card drawnCard = gameService.drawCard(player);
+            cli.displayDraw(drawnCard.getSuit(), drawnCard.getRank());
+        }
     }
 
     public static void main(String[] args) {

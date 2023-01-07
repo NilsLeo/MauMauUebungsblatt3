@@ -15,6 +15,11 @@ public class Deck {
         }
     }
 
+    public void addAll(List<Card> newCards) {
+        // Adding all new cards to the existing cards list
+        cards.addAll(newCards);
+    }
+
     public List<Card> getCards() {
         return cards;
     }

@@ -8,6 +8,4 @@ public interface DeckService {
     ArrayList<Card> dealHand(Deck deck);
 
     Card deal(Deck deck);
-
-    List<Card> renewDeckFromTable(Deck deck, List<Card> table);
 }
