@@ -12,9 +12,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import de.htwberlin.kbe.gruppe4.impl.DeckServiceImpl;
-import de.htwberlin.kbe.gruppe4.inter.Card;
-import de.htwberlin.kbe.gruppe4.inter.Deck;
-import de.htwberlin.kbe.gruppe4.inter.DeckService;
 
 @ExtendWith(MockitoExtension.class)
 public class DeckServiceImplTest {

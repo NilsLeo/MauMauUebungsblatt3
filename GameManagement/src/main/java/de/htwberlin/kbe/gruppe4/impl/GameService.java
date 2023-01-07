@@ -1,14 +1,7 @@
 package de.htwberlin.kbe.gruppe4.impl;
-
-import com.google.inject.Guice;
 import javax.inject.Inject;
-import com.google.inject.Injector;
-import de.htwberlin.kbe.gruppe4.inter.GameModule;
 import de.htwberlin.kbe.gruppe4.inter.*;
-import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PatternLayout;
-
 import java.util.ArrayList;
 import java.util.List;
 

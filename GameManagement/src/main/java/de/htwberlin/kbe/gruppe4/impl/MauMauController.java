@@ -5,10 +5,7 @@ import de.htwberlin.kbe.gruppe4.inter.Player;
 import de.htwberlin.kbe.gruppe4.inter.Card;
 
 import java.util.List;
-
-import com.google.inject.Guice;
 import com.google.inject.Inject;
-import com.google.inject.Injector;
 
 public class MauMauController {
     private final CLIService cli;
