@@ -13,12 +13,6 @@
     <dependencies>
         <dependency>
             <groupId>de.htwberlin.kbe.gruppe4</groupId>
-            <artifactId>CardManagement</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>de.htwberlin.kbe.gruppe4</groupId>
             <artifactId>DeckManagement</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>

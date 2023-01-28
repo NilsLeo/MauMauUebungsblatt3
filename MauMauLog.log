@@ -790,3 +790,7 @@
 2023-01-11 23:25:42,785 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@16d04d3d drew a TEN of HEARTS
 2023-01-11 23:25:53,976 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] NINE of DIAMONDS was placed on table.
 2023-01-11 23:25:53,976 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the NINE of DIAMONDS
+2023-01-28 21:34:55,452 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-28 21:34:55,454 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-28 21:34:55,454 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of HEARTS was placed on table.
+2023-01-28 21:34:55,454 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of HEARTS
