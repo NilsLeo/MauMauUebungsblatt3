@@ -822,3 +822,11 @@
 2023-01-28 22:50:48,168 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
 2023-01-28 22:50:48,168 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] QUEEN of HEARTS was placed on table.
 2023-01-28 22:50:48,168 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the QUEEN of HEARTS
+2023-01-28 22:53:22,122 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-28 22:53:22,125 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-28 22:53:22,125 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] EIGHT of HEARTS was placed on table.
+2023-01-28 22:53:22,125 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the EIGHT of HEARTS
+2023-01-28 22:55:48,843 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-28 22:55:48,846 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-28 22:55:48,846 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] EIGHT of CLUBS was placed on table.
+2023-01-28 22:55:48,846 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the EIGHT of CLUBS
