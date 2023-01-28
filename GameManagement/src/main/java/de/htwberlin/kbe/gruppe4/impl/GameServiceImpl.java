@@ -14,16 +14,15 @@ public class GameServiceImpl implements GameService {
     private DeckService deckService;
     RulesService rulesService;
     PlayerService playerService;
-    private final List<Player> players;
     private final Deck deck;
     private List<Card> table;
     private final Rules rules;
     private int currentPlayer;
+    private Game game;
 
     @Inject
     public GameServiceImpl(DeckService deckService, RulesService rulesService,
             PlayerService playerService) {
-        this.players = new ArrayList<>();
         this.deck = new Deck();
         this.table = new ArrayList<>();
         this.rules = new Rules();
@@ -31,12 +30,13 @@ public class GameServiceImpl implements GameService {
         this.deckService = deckService;
         this.rulesService = rulesService;
         this.playerService = playerService;
+        this.game = new Game();
     }
 
     @Override
     public void setPlayers(List<String> names) {
         for (String name : names) {
-            this.players.add(new Player(name));
+            this.game.getPlayers().add(new Player(name));
         }
     }
 
@@ -54,7 +54,7 @@ public class GameServiceImpl implements GameService {
     public void startGame() {
         deckService.shuffle(deck);
         table.add(deckService.deal(deck));
-        for (Player player : players) {
+        for (Player player : game.getPlayers()) {
             playerService.dealHand(player, deck);
         }
         logger.info("Game started");
@@ -80,7 +80,7 @@ public class GameServiceImpl implements GameService {
         // add all cards on the table to the list
         allCards.addAll(table);
         // check all players' hands for duplicates
-        for (Player player : players) {
+        for (Player player : game.getPlayers()) {
             // add all cards in the player's hand to the list
             allCards.addAll(player.getHand());
         }
@@ -153,8 +153,8 @@ public class GameServiceImpl implements GameService {
         // check if current player is less than 0
         if (currentPlayer < 0) {
             // set current player to last player in the list
-            currentPlayer = players.size() - 1;
-        } else if (currentPlayer == players.size()) {
+            currentPlayer = game.getPlayers().size() - 1;
+        } else if (currentPlayer == game.getPlayers().size()) {
             // set current player to first player in the list
             currentPlayer = 0;
         }
@@ -162,7 +162,7 @@ public class GameServiceImpl implements GameService {
 
     @Override
     public List<Player> getPlayers() {
-        return players;
+        return game.getPlayers();
     }
 
     @Override
@@ -183,7 +183,7 @@ public class GameServiceImpl implements GameService {
 
     @Override
     public boolean isGameOver() {
-        for (Player player : players) {
+        for (Player player : game.getPlayers()) {
             if (player.getHand().isEmpty()) {
                 return true;
             }
