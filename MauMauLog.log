@@ -794,3 +794,15 @@
 2023-01-28 21:34:55,454 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
 2023-01-28 21:34:55,454 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of HEARTS was placed on table.
 2023-01-28 21:34:55,454 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of HEARTS
+2023-01-28 22:13:50,055 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = true, reverse on ace = false
+2023-01-28 22:13:50,057 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-28 22:13:50,058 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] EIGHT of SPADES was placed on table.
+2023-01-28 22:13:50,058 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the EIGHT of SPADES
+2023-01-28 22:20:41,124 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = true, reverse on ace = true
+2023-01-28 22:20:41,126 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-28 22:20:41,127 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] NINE of HEARTS was placed on table.
+2023-01-28 22:20:41,127 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the NINE of HEARTS
+2023-01-28 22:28:28,941 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = true, reverse on ace = false
+2023-01-28 22:28:28,943 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-28 22:28:28,943 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of HEARTS was placed on table.
+2023-01-28 22:28:28,943 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of HEARTS

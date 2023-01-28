@@ -17,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="Configuration" target="19" />
       <module name="MauMau" target="1.7" />
+      <module name="MauMauManagement" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>

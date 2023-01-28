@@ -1,4 +1,4 @@
-package de.htwberlin.kbe.gruppe4.inter;
+package de.htwberlin.kbe.gruppe4.impl;
 
 import java.util.List;
 import java.util.regex.Matcher;
@@ -9,15 +9,20 @@ import com.google.inject.Inject;
 import com.google.inject.Injector;
 
 import de.htwberlin.kbe.gruppe4.config.MauMauModule;
+import de.htwberlin.kbe.gruppe4.inter.CLIService;
+import de.htwberlin.kbe.gruppe4.inter.Card;
+import de.htwberlin.kbe.gruppe4.inter.GameService;
+import de.htwberlin.kbe.gruppe4.inter.CLIController;
+import de.htwberlin.kbe.gruppe4.inter.Player;
 
-public class MauMauController {
+public class CLIControllerImpl implements CLIController {
     private final CLIService cli;
     private final GameService gameService;
     int nextPlayerDraws = 0;
     boolean rememberedToSayMauMau = false;
 
     @Inject
-    public MauMauController(CLIService cli, GameService gameService) {
+    public CLIControllerImpl(CLIService cli, GameService gameService) {
         this.cli = cli;
         this.gameService = gameService;
     }
@@ -129,13 +134,5 @@ public class MauMauController {
             Card drawnCard = gameService.drawCard(player);
             cli.displayDraw(drawnCard.getSuit(), drawnCard.getRank());
         }
-    }
-
-    public static void main(String[] args) {
-        Injector injector = Guice.createInjector(new MauMauModule());
-        CLIService cliService = injector.getInstance(CLIService.class);
-        GameService gameService = injector.getInstance(GameService.class);
-        MauMauController controller = new MauMauController(cliService, gameService);
-        controller.startGame();
     }
 }
