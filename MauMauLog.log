@@ -839,3 +839,7 @@
 2023-01-28 22:59:38,750 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@10e31a9a drew a KING of CLUBS
 2023-01-28 22:59:39,235 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@10e31a9a drew a TEN of DIAMONDS
 2023-01-28 22:59:39,608 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] de.htwberlin.kbe.gruppe4.inter.Player@10e31a9a drew a SEVEN of DIAMONDS
+2023-01-28 23:10:43,865 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Rules for the game have been set: draw two on seven = false, choose suit on jack = false, reverse on ace = false
+2023-01-28 23:10:43,867 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Game started
+2023-01-28 23:10:43,867 [INFO|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] ACE of DIAMONDS was placed on table.
+2023-01-28 23:10:43,867 [DEBUG|de.htwberlin.kbe.gruppe4.inter.GameService|GameServiceImpl] Top card is the ACE of DIAMONDS
